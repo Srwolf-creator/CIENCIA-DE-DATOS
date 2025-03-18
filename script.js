@@ -1,3 +1,4 @@
+debugger 
 const URL = "https://teachablemachine.withgoogle.com/models/ytJ6U7WVd/";
 let model, webcam, maxPredictions;
 
