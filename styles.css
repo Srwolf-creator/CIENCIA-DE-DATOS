@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, hsl(219, 55%, 94%), #fbfbfc); /* Fondo azul con degradado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;
+}
+
+/* Cuadro con borde rojo para el título */
+.title-box {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 3px solid red; /* Borde rojo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Más espacio debajo del título */
+    margin-top: -100px; /* Sube el título */
+}
+
+/* Título "La Pintura" */
+h1 {
+    color: #333; /* Color del texto */
+    font-size: 3rem;
+    margin: 0; /* Elimina el margen predeterminado */
+    text-align: center;
+}
+
+/* Contenedor principal con borde rojo */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid red; /* Borde rojo */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la cámara con marco dorado */
+#webcam-container {
+    position: relative;
+    border: 20px solid #685905; /* Marco dorado */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background: #FFD700; /* Fondo dorado */
+}
+
+#webcam-container canvas {
+    display: block;
+}
+
+/* Contenedores de gráficos */
+#chart-container, #pie-container {
+    background: rgba(58, 6, 6, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Vista móvil */
+@media (max-width: 768px) {
+    .title-box {
+        padding: 10px 20px; /* Menos padding en móviles */
+        margin-top: -50px; /* Ajuste para móviles */
+    }
+
+    h1 {
+        font-size: 2rem; /* Tamaño más pequeño para móviles */
+    }
+
+    .container {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        gap: 10px;
+        padding: 15px;
+    }
+
+    #webcam-container {
+        width: 80%; /* Ajusta el ancho de la cámara */
+    }
+
+    #chart-container, #pie-container {
+        width: 80%; /* Ajusta el ancho de los gráficos */
+    }
+}

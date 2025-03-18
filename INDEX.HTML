@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pintura</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS -->
+    <link rel="icon" href="logo.jpeg" type="image/jpeg"> <!-- Favicon -->
+</head>
+<body>
+    <!-- Cuadro con borde rojo para el título -->
+    <div class="title-box">
+        <h1>La Pintura</h1>
+    </div>
+
+    <!-- Contenedor principal con borde rojo -->
+    <div class="container">
+        <div id="webcam-container"></div>
+        <div id="chart-container">
+            <canvas id="bar-chart"></canvas> <!-- Gráfico de barras -->
+        </div>
+        <div id="pie-container">
+            <canvas id="pie-chart"></canvas> <!-- Gráfico de torta -->
+        </div>
+    </div>
+
+    <!-- TensorFlow.js y Teachable Machine -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
